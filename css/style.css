@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #78b3fd;
+}
+
+div {
+  background-color: #294a86;
+}
+
+.page {
+  background-color: #4b7cde;
+  display: flex;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
+  height: 70%;
+}
+
+h1 {
+  color: #140f07;
+  padding: 20px;
+  border: 1px red solid;
+  margin-right: 20px;
+  text-align: right;
+}
+
+p {
+  margin-left: 20px;
+}
+
+/*.color1 {color: #140f07;}
+.color2 {color: #101d37;}
+.color3 {color: #294a86;}
+.color4 {color: #4b7cde;}
+.color5 {color: #78b3fd;}
+
+/*$first-color:  #fffbf4;
+$second-color: #ffd8f4;
+$third-color: #ab9dfa;
+$fourth-color: #2d6eff;
+$five-color: #0349fd;*/
+
+/*# sourceMappingURL=style.css.map */
