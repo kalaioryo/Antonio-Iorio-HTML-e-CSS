@@ -15,11 +15,11 @@ div {
 .page {
   background-color: #4b7cde;
   display: flex;
+  justify-content: center;
   border-radius: 10px;
   flex-wrap: wrap;
   margin: auto;
   width: 80%;
-  height: 70%;
 }
 
 h1 {

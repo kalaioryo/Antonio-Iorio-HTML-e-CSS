@@ -12,7 +12,7 @@ $five-color: #140f07;
 
 body {
     background-color: $first-color;
-    
+    //background-image: url(../img/gatto.jpg);
 }
 
 div{
@@ -22,11 +22,12 @@ div{
 .page {
     background-color: $second-color;
     display: flex;
+    justify-content: center;
     border-radius: 10px;
     flex-wrap: wrap;
     margin: auto;
     width: 80%;
-    height: 70%;
+    //height: 70%;
 }
 
 h1 {
