@@ -8,18 +8,20 @@ body {
   background-color: #78b3fd;
 }
 
-div {
-  background-color: #294a86;
-}
-
 .page {
   background-color: #4b7cde;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   border-radius: 10px;
   flex-wrap: wrap;
   margin: auto;
-  width: 80%;
+  width: 90%;
+}
+.page div {
+  background-color: #294a86;
+  padding: 20px;
+  width: 80% px;
+  margin: 20px;
 }
 
 h1 {

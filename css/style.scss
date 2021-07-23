@@ -15,19 +15,23 @@ body {
     //background-image: url(../img/gatto.jpg);
 }
 
-div{
-    background-color: $third-color;
-}
+
 
 .page {
     background-color: $second-color;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     border-radius: 10px;
     flex-wrap: wrap;
     margin: auto;
-    width: 80%;
+    width: 90%;
     //height: 70%;
+    div{
+        background-color: $third-color;
+        padding: 20px;
+        width: 80%px;
+        margin: 20px;
+    }
 }
 
 h1 {
