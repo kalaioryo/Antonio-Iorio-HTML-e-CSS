@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$first-color:  #78b3fd;
+$second-color: #4b7cde54;
+$third-color: #294a86;
+$fourth-color: #101d37;
+$five-color: #140f07;
+
+body {
+    background-color: $first-color;
+    background-image: url(../img/gatto.jpg);
+}
+
+div {
+    //padding: 20px;
+    border: 1px red solid;
+}
+
+.page {
+    padding: 10px;
+    background-color: $second-color;
+}
+
+.navbar {
+    margin: 0px;
+    background-color: $fourth-color;
+    color: $first-color;
+    display: flex;
+    justify-content: space-between;
+    //padding: 10px;
+    //margin: auto;
+
+    img {
+        width: 25%;
+    }
+
+    ul {
+        margin-top: 10px;
+
+
+        li {
+            list-style-type: none;
+            display: inline;
+            padding: 5px;
+            
+
+            a:link,
+            :visited {
+                text-decoration: none;
+                color: $first-color;
+            }
+
+            a:hover {
+                color: orange;
+                border-bottom: 1px solid orange;
+            }
+
+            
+            
+        }
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    background-color: $first-color;
+    //border: 2px solid $second-color;
+    border-radius: 10px;
+
+    img {
+        opacity: 0.9;
+        border-radius: 10px;
+        }
+    
+    h1 {
+        //display: block;
+        margin: 25px auto;
+        
+    }
+}
+
+//@media only screen and (max-width: 400px) {
+
+
+/*.color1 {color: #140f07;}
+.color2 {color: #101d37;}
+.color3 {color: #294a86;}
+.color4 {color: #4b7cde;}
+.color5 {color: #78b3fd;}
+
+/*$first-color:  #fffbf4;
+$second-color: #ffd8f4;
+$third-color: #ab9dfa;
+$fourth-color: #2d6eff;
+$five-color: #0349fd;*/
