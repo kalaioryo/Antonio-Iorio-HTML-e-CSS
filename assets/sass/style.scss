@@ -1,7 +1,23 @@
+@use 'neon-button';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+%margin-div {
+    border-left: 10px dashed #2196f3;
+    border-right: 10px dashed #2196f3;
+    margin: 0 20px 0 20px;
+    padding: 50px 0 ;
+}
+
+%margin-div2 {
+    border-left: 10px dashed #78b3fd;
+    border-right: 10px dashed #78b3fd;
+    margin: 0px 20px 0 20px;
+    padding: 50px 0 ;
 }
 
 $first-color:  #78b3fd;
@@ -9,10 +25,17 @@ $second-color: #4b7cde54;
 $third-color: #294a86;
 $fourth-color: #101d37;
 $five-color: #140f07;
+$text-color: #2196f3;
+$effect-color2:#2196f3;
+
+
 
 body {
     background-color: $first-color;
-    background-image: url(../img/gatto.jpg);
+    //background-image: url(../img/gatto.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 div {
@@ -20,17 +43,18 @@ div {
     border: 1px red solid;
 }
 
-.page {
+/*.page {
     padding: 10px;
     background-color: $second-color;
-}
+}*/
 
 .navbar {
-    margin: 0px;
+    margin-bottom: 50px;
     background-color: $fourth-color;
     color: $first-color;
     display: flex;
     justify-content: space-between;
+    border-bottom: 10px dashed $first-color;
     //padding: 10px;
     //margin: auto;
 
@@ -46,6 +70,8 @@ div {
             list-style-type: none;
             display: inline;
             padding: 5px;
+
+            a{padding: 3px;}
             
 
             a:link,
@@ -55,8 +81,12 @@ div {
             }
 
             a:hover {
-                color: orange;
-                border-bottom: 1px solid orange;
+                color: $fourth-color;
+                background-color: $effect-color2;
+                border-bottom: 1px solid $text-color;
+                box-shadow: 0px 0px 20px $text-color;
+                border-radius: 5px;
+                
             }
 
             
@@ -69,24 +99,76 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 0px;
+    margin: 5%;
     background-color: $first-color;
     //border: 2px solid $second-color;
     border-radius: 10px;
 
+    .border-image {
+        border-radius: 10px;
+        border-bottom: 10px solid $fourth-color;
+        //border-top: 10px dashed $fourth-color;
+        //border-radius: 10px;
+    }
+
     img {
+        margin-bottom: 10px;
         opacity: 0.9;
         border-radius: 10px;
         }
     
-    h1 {
+    .border-name {
+        margin-top: auto;
+        margin-bottom: auto;;
+        padding: 40px;
+        border-bottom: 10px solid $fourth-color;
+        border-radius: 10px;
+
+    }
+    
+}
+
+.subtitle {
+    h2 {
         //display: block;
-        margin: 25px auto;
-        
+        @extend %margin-div2;
+        color: $text-color;
+        background-color: $fourth-color;
+        text-align: center;
+        text-decoration: underline $text-color;
+        //margin-top: 10px;
+        //padding: 20px;
     }
 }
 
-//@media only screen and (max-width: 400px) {
+.text {
+    @extend %margin-div;
+    p {margin-left: 5px;}
+}
+
+.item{
+    @extend %margin-div;
+}
+
+.neon{
+    @extend %margin-div2;
+}
+
+.space {
+    @extend %margin-div;
+}
+
+footer{
+    background-color: $fourth-color;
+    border-top: 10px dashed $first-color;
+}
+
+
+
+
+@media only screen and (max-width: 400px) {
+    .avatar {width: 80%; margin: 0% 10%;}
+}
 
 
 /*.color1 {color: #140f07;}
