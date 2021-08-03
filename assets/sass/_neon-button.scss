@@ -1,50 +1,54 @@
-$first-color:  #78b3fd;
-$second-color: #4b7cde54;
-$third-color: #294a86;
+
 $fourth-color: #101d37;
-$five-color: #140f07;
 $text-color: #2196f3;
-$effect-color2:#2196f3;
+//$text-color: rgb(5, 59, 5); //test change color
+$effect-color:#255784;
+$effect-color2: #2196f3;
+//$effect-color2: #21f3a3; //test change color
+
 
 .neon {
-    
     background-color: $fourth-color;
-    a{
     
+    a{
     position: relative;
     display: flex;
     justify-content: center;
-    padding: 10px 60px;
-    color:#2196f3;
+    padding: 10px 30px;
+    color:$text-color;
     text-transform: lowercase;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 21px;
     overflow: hidden;
     transform: 0.2s;
-    margin: 5px 24%;
+    margin: 5px 8%;
     
     }
+
 a:hover
 {
     color: #255784;
-    background: #2196f3;
-    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    background: $effect-color2;
+    box-shadow: 0 0 10px $effect-color2, 0 0 40px $effect-color2, 0 0 80px $effect-color2;
     transition-delay: 1s;
 }
+
 a span
 {
     position: absolute;
     display: block;
 }
+
 a span:nth-child(1)
 {
     top: 0;
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg,transparent,#2196f3);
+    background: linear-gradient(90deg,transparent,$effect-color2);
 }
+
 a:hover span:nth-child(1)
 {
     left: 100%;
@@ -57,7 +61,7 @@ a span:nth-child(3)
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg,transparent,#2196f3);
+    background: linear-gradient(270deg,transparent,$effect-color2);
 }
 a:hover span:nth-child(3)
 {
@@ -72,7 +76,7 @@ a span:nth-child(2)
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg,transparent,#2196f3);
+    background: linear-gradient(180deg,transparent,$effect-color2);
 }
 a:hover span:nth-child(2)
 {
@@ -87,7 +91,7 @@ a span:nth-child(4)
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg,transparent,#2196f3);
+    background: linear-gradient(360deg,transparent,$effect-color2);
 }
 a:hover span:nth-child(4)
 {
@@ -96,13 +100,46 @@ a:hover span:nth-child(4)
     transition-delay: 0.75s;
 }
 
-@media only screen and (max-width: 600px) {
-    a {margin: 5%;
-       padding: 5px;
-       letter-spacing: 2px;
+    @media only screen and (min-width: 400px) and (max-width: 600px){
+        a {
+            margin: 5px 12%;
+            padding: 5px;
+            letter-spacing: 2px;
+            font-size: 24px;
+        }
     }
-}
-
+    @media only screen and (min-width: 600px){
+        a {margin: 5px 25%;
+           padding: 5px;
+           letter-spacing: 2px;
+           //font-size: 0.9em;
+           }
+        }
+    
+    @media only screen and (min-width: 900px){
+        a {
+            margin: 5px 35%;
+            padding: 5px;
+            letter-spacing: 2px;
+            //font-size: 0.9em;
+            }
+        }
+/*@media only screen and (min-width: 620px) {
+    a {//width: 290px;
+       margin: 25% 10;
+       //padding: auto;
+       letter-spacing: 2px;
+       //font-size: 0.9em;
+       }
+    }*/
+/*@media only screen and (min-width: 800px) {
+    a {width: 20%;
+        margin: 80% 10;
+        //padding: auto;
+        letter-spacing: 2px;
+        //font-size: 0.9em;
+        }
+    }*/
 }
 
 

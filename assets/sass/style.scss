@@ -1,4 +1,25 @@
+//@use 'color-style';
+@use 'navbar-section';
+//@use 'media';
+@use 'card';
 @use 'neon-button';
+
+
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap);
+}
+
+@font-face {
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway:wght@200&display=swap);
+}
+
 
 * {
     margin: 0;
@@ -9,112 +30,54 @@
 %margin-div {
     border-left: 10px dashed #2196f3;
     border-right: 10px dashed #2196f3;
-    margin: 0 20px 0 20px;
-    padding: 50px 0 ;
+    margin: 0 10px 0 10px;
+    padding: 30px 0 ;
 }
 
-%margin-div2 {
-    border-left: 10px dashed #78b3fd;
-    border-right: 10px dashed #78b3fd;
-    margin: 0px 20px 0 20px;
-    padding: 50px 0 ;
-}
+//colors
 
-$first-color:  #78b3fd;
+$first-color:  #76b1f8;
 $second-color: #4b7cde54;
 $third-color: #294a86;
 $fourth-color: #101d37;
 $five-color: #140f07;
-$text-color: #2196f3;
-$effect-color2:#2196f3;
-
+$text-color: #76b1f8;
+$effect-color:#2196f3;
 
 
 body {
-    background-color: $first-color;
+    background-color: #caf0f8 ;
     //background-image: url(../img/gatto.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: 'Raleway', sans-serif;
 }
 
-div {
-    //padding: 20px;
-    border: 1px red solid;
-}
-
-/*.page {
-    padding: 10px;
-    background-color: $second-color;
-}*/
-
-.navbar {
-    margin-bottom: 50px;
-    background-color: $fourth-color;
-    color: $first-color;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 10px dashed $first-color;
-    //padding: 10px;
-    //margin: auto;
-
-    img {
-        width: 25%;
-    }
-
-    ul {
-        margin-top: 10px;
 
 
-        li {
-            list-style-type: none;
-            display: inline;
-            padding: 5px;
 
-            a{padding: 3px;}
-            
+//navbar _navbar-section.scss
 
-            a:link,
-            :visited {
-                text-decoration: none;
-                color: $first-color;
-            }
-
-            a:hover {
-                color: $fourth-color;
-                background-color: $effect-color2;
-                border-bottom: 1px solid $text-color;
-                box-shadow: 0px 0px 20px $text-color;
-                border-radius: 5px;
-                
-            }
-
-            
-            
-        }
-    }
-}
-
-header {
+.my-head {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 5%;
-    background-color: $first-color;
-    //border: 2px solid $second-color;
     border-radius: 10px;
 
     .border-image {
-        border-radius: 10px;
-        border-bottom: 10px solid $fourth-color;
-        //border-top: 10px dashed $fourth-color;
-        //border-radius: 10px;
+        border-bottom : 10px solid $fourth-color;
+        border-top : 10px solid $fourth-color;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
     }
 
     img {
-        margin-bottom: 10px;
-        opacity: 0.9;
-        border-radius: 10px;
+        margin: 5px 0 5px 0;
+        opacity: 0.85;
+        border-radius: 50%;
         }
     
     .border-name {
@@ -122,47 +85,135 @@ header {
         margin-bottom: auto;;
         padding: 40px;
         border-bottom: 10px solid $fourth-color;
-        border-radius: 10px;
-
-    }
-    
+        border-radius: 50%;
+        
+        h1 {
+            font-family: 'Indie Flower', cursive;
+            font-size: 32px;
+            color: $fourth-color;
+        }
+    }    
 }
 
+//section about  
+
+
+
 .subtitle {
+
+    h1 {
+        margin: 20px;
+        color: $fourth-color;
+    }
+    
     h2 {
-        //display: block;
-        @extend %margin-div2;
+        @extend %margin-div;
         color: $text-color;
         background-color: $fourth-color;
         text-align: center;
-        text-decoration: underline $text-color;
-        //margin-top: 10px;
-        //padding: 20px;
+        font-size: 32px;
     }
 }
 
+
+
 .text {
     @extend %margin-div;
-    p {margin-left: 5px;}
+    display: flex;
+    justify-content: center;
+   
+    
 }
 
-.item{
+p {
+    margin: 10px 2%;
+    font-size: 18px;
+    line-height: 28px;
+    color: $fourth-color;
+}
+
+//section portfolio
+
+.border-portfolio {
     @extend %margin-div;
 }
 
+//card section _card.scss
+
+//neon button _neon-button.scss
+
 .neon{
-    @extend %margin-div2;
+    @extend %margin-div;
 }
 
 .space {
     @extend %margin-div;
 }
 
-footer{
+//footer
+
+footer {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
     background-color: $fourth-color;
-    border-top: 10px dashed $first-color;
+    border-top: 10px dashed $effect-color;
+    padding: 20px;
+    color: $text-color;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+
+        li {
+            padding: 5px 15px;
+            
+            
+            :hover {
+                box-shadow: 0 0 5px $effect-color;
+                border-radius: 50%;
+            }
+
+            img {
+                padding: 3px;
+            }
+        }
+    }
 }
 
+//other page
+
+.page {
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-between;
+    align-items: center;
+   
+    .back-g-img {
+       //width: 100% auto;
+       margin: 80px 0; 
+       background-color: $fourth-color;
+       border-radius: 15px;
+    }
+
+    img{
+        width: 80% auto;
+        margin: 15px;
+        background-color: $fourth-color;
+        
+    }
+
+    .one-border {
+        border-right: none;
+        margin-bottom: 60px;
+    }
+
+    /*.image-project {
+        width: 50%;
+    }*/
+}
+
+//media 
 
 
 
@@ -170,15 +221,38 @@ footer{
     .avatar {width: 80%; margin: 0% 10%;}
 }
 
+@media only screen and (max-width: 750px) {
+    .item {margin: 10px;}
+}
 
-/*.color1 {color: #140f07;}
-.color2 {color: #101d37;}
-.color3 {color: #294a86;}
-.color4 {color: #4b7cde;}
-.color5 {color: #78b3fd;}
+@media only screen and (min-width: 600px) {
 
-/*$first-color:  #fffbf4;
-$second-color: #ffd8f4;
-$third-color: #ab9dfa;
-$fourth-color: #2d6eff;
-$five-color: #0349fd;*/
+    body{
+        min-width: 100%
+    }
+
+    .card-container {
+        width: 50%;
+        max-width: 230px;
+        
+    }
+
+    .cards {
+        //height: 400px;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 10px;
+
+        .copy-card {
+            align-self:initial;
+        }
+    }
+
+    p {
+        //margin: auto;
+        width: 600px;
+        //line-height: ;
+        //border: red 1px solid;
+    }
+}

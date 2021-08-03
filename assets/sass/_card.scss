@@ -1,0 +1,144 @@
+$first-color:  #76b1f8;
+$second-color: #4b7cde54;
+$third-color: #294a86;
+$fourth-color: #101d37;
+$five-color: #140f07;
+$text-color: #76b1f8;
+$effect-color:#2196f3;
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //max-width: 600px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    //height: 400px;
+    //height: 800px; //for next item*/
+    //border: 5px $fourth-color solid;
+    border-radius: 10px;
+
+    img {
+        border-radius: 5%;
+        padding: 5px;
+    }
+    
+    .card-image{
+        width: 100%;
+    
+    }
+
+    .card {
+        border: 5px $fourth-color solid;
+        border-radius: 5%;
+        width: 80%;
+        margin: 0 1.5%;
+    
+    
+    }
+    .copy-card {
+        
+        border-top: 3px solid $fourth-color;
+        margin: 0 150px 0 150px auto ;
+        text-align: center;
+
+
+        a {
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            color: $fourth-color;
+            font-size: 18px;
+            border-radius: 0  0 8px 8px;
+                  
+
+        }
+
+        a:hover {
+            background-color: $fourth-color;
+            color: $text-color;
+            
+        }  
+        
+    }
+}
+
+
+
+
+
+
+
+    /*.item{*/
+        
+        /*width: 190px;
+	    height: 210px;
+        margin: auto;
+        margin-top: 20px;
+        transition: 1.5s;
+	    -webkit-transition: 1.5s;
+        //background-color: $fourth-color;
+        //text-align: center;
+        border-color:  $fourth-color;
+        border-radius: 5px;
+        color: $text-color;
+        //overflow: hidden;
+    }*/
+    /*span {
+        font-size: 18px;
+    }
+    img {
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 5%;
+        //margin: 5%;
+    }
+
+    a {text-decoration: none;
+        //background: none;
+        transition: 2s;
+	    -webkit-transition: 2s;
+        border-radius: 50%;
+        //background-color: $fourth-color;
+        //display: none;
+    }
+
+    :hover{
+	    width: 300%;
+        height: 400px;
+        //background-color: $effect-color;
+        //position: initial;
+        color: $five-color;
+        transition: 1.5s;
+	    -webkit-transition: 1.5s;
+    
+
+        img {
+            width: 200px;
+            height: 200px;
+            //background: none;
+            transition: 3s;
+	        -webkit-transition: 3s;
+        }
+
+        span {
+            transition: 3s;
+	        -webkit-transition: 3s;
+        }
+
+    }
+
+    a {text-decoration: none;
+        background: none;
+        //display: none;
+    }*/
+
+    
