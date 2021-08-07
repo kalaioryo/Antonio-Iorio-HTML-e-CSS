@@ -1,6 +1,4 @@
-//@use 'color-style';
 @use 'navbar-section';
-//@use 'media';
 @use 'card';
 @use 'neon-button';
 
@@ -47,7 +45,7 @@ $effect-color:#2196f3;
 
 body {
     background-color: #caf0f8 ;
-    //background-image: url(../img/gatto.jpg);
+    //background-image: url(../img/gatto.jpg); //test
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,10 +117,10 @@ body {
 
 .text {
     @extend %margin-div;
+    border: none;
+    padding: 90px 0;
     display: flex;
     justify-content: center;
-   
-    
 }
 
 p {
@@ -136,6 +134,7 @@ p {
 
 .border-portfolio {
     @extend %margin-div;
+    border: none;
 }
 
 //card section _card.scss
@@ -148,6 +147,8 @@ p {
 
 .space {
     @extend %margin-div;
+    padding: 70px;
+    border: none;
 }
 
 //footer
@@ -155,10 +156,12 @@ p {
 footer {
     margin-bottom: 0;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     background-color: $fourth-color;
     border-top: 10px dashed $effect-color;
-    padding: 20px;
+    padding: 50px 20px;
     color: $text-color;
 
     ul {
@@ -167,8 +170,7 @@ footer {
 
         li {
             padding: 5px 15px;
-            
-            
+                       
             :hover {
                 box-shadow: 0 0 5px $effect-color;
                 border-radius: 50%;
@@ -181,13 +183,22 @@ footer {
     }
 }
 
+
+.copyright {
+    color: $text-color;
+    min-width: max-content;
+    text-align: center;
+}
+
 //other page
 
 .page {
+    @extend %margin-div;
     display: flex;
     flex-direction: column;
     //justify-content: space-between;
     align-items: center;
+    border: none;
    
     .back-g-img {
        //width: 100% auto;
@@ -199,23 +210,47 @@ footer {
     img{
         width: 80% auto;
         margin: 15px;
-        background-color: $fourth-color;
-        
+        background-color: $fourth-color;   
     }
 
-    .one-border {
-        border-right: none;
+    .text-other-page {
+        border: none;
         margin-bottom: 60px;
-    }
 
-    /*.image-project {
-        width: 50%;
-    }*/
+        p {
+            margin: 10px 2%;
+            font-size: 18px;
+            line-height: 28px;
+            color: $fourth-color;
+        }
+    }
 }
 
+
+//scroollbar
+
+ /* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $fourth-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $third-color;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $effect-color;
+} 
+
 //media 
-
-
 
 @media only screen and (max-width: 400px) {
     .avatar {width: 80%; margin: 0% 10%;}
@@ -238,7 +273,6 @@ footer {
     }
 
     .cards {
-        //height: 400px;
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -250,9 +284,6 @@ footer {
     }
 
     p {
-        //margin: auto;
         width: 600px;
-        //line-height: ;
-        //border: red 1px solid;
     }
 }

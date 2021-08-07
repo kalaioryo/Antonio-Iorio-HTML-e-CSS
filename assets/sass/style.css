@@ -63,7 +63,7 @@
 }
 .cards .card {
   border: 5px #101d37 solid;
-  border-radius: 5%;
+  border-radius: 16px;
   width: 80%;
   margin: 0 1.5%;
 }
@@ -78,76 +78,13 @@
   padding: 10px;
   color: #101d37;
   font-size: 18px;
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 6px 6px;
 }
 .cards .copy-card a:hover {
   background-color: #101d37;
   color: #76b1f8;
 }
 
-/*.item{*/
-/*width: 190px;
- height: 210px;
-    margin: auto;
-    margin-top: 20px;
-    transition: 1.5s;
- -webkit-transition: 1.5s;
-    //background-color: $fourth-color;
-    //text-align: center;
-    border-color:  $fourth-color;
-    border-radius: 5px;
-    color: $text-color;
-    //overflow: hidden;
-}*/
-/*span {
-    font-size: 18px;
-}
-img {
-    margin: auto;
-    width: 200px;
-    height: 200px;
-    border-radius: 5%;
-    //margin: 5%;
-}
-
-a {text-decoration: none;
-    //background: none;
-    transition: 2s;
- -webkit-transition: 2s;
-    border-radius: 50%;
-    //background-color: $fourth-color;
-    //display: none;
-}
-
-:hover{
- width: 300%;
-    height: 400px;
-    //background-color: $effect-color;
-    //position: initial;
-    color: $five-color;
-    transition: 1.5s;
- -webkit-transition: 1.5s;
-
-
-    img {
-        width: 200px;
-        height: 200px;
-        //background: none;
-        transition: 3s;
-     -webkit-transition: 3s;
-    }
-
-    span {
-        transition: 3s;
-     -webkit-transition: 3s;
-    }
-
-}
-
-a {text-decoration: none;
-    background: none;
-    //display: none;
-}*/
 .neon {
   background-color: #101d37;
   /*@media only screen and (min-width: 620px) {
@@ -280,7 +217,7 @@ a {text-decoration: none;
   box-sizing: border-box;
 }
 
-.space, .neon, .border-portfolio, .text, .subtitle h2 {
+.page, .space, .neon, .border-portfolio, .text, .subtitle h2 {
   border-left: 10px dashed #2196f3;
   border-right: 10px dashed #2196f3;
   margin: 0 10px 0 10px;
@@ -339,6 +276,8 @@ body {
 }
 
 .text {
+  border: none;
+  padding: 90px 0;
   display: flex;
   justify-content: center;
 }
@@ -350,13 +289,24 @@ p {
   color: #101d37;
 }
 
+.border-portfolio {
+  border: none;
+}
+
+.space {
+  padding: 70px;
+  border: none;
+}
+
 footer {
   margin-bottom: 0;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   background-color: #101d37;
   border-top: 10px dashed #2196f3;
-  padding: 20px;
+  padding: 50px 20px;
   color: #76b1f8;
 }
 footer ul {
@@ -374,13 +324,17 @@ footer ul li img {
   padding: 3px;
 }
 
+.copyright {
+  color: #76b1f8;
+  min-width: max-content;
+  text-align: center;
+}
+
 .page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*.image-project {
-      width: 50%;
-  }*/
+  border: none;
 }
 .page .back-g-img {
   margin: 80px 0;
@@ -392,9 +346,36 @@ footer ul li img {
   margin: 15px;
   background-color: #101d37;
 }
-.page .one-border {
-  border-right: none;
+.page .text-other-page {
+  border: none;
   margin-bottom: 60px;
+}
+.page .text-other-page p {
+  margin: 10px 2%;
+  font-size: 18px;
+  line-height: 28px;
+  color: #101d37;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #101d37;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #294a86;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2196f3;
 }
 
 @media only screen and (max-width: 400px) {
