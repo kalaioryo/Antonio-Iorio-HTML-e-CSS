@@ -441,6 +441,10 @@ footer ul li img {
   p {
     width: 600px;
   }
+
+  .center {
+    margin: 8% 20% 8% 20%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
