@@ -254,8 +254,11 @@ footer {
 
     img{
         width: 80% auto;
-        margin: 15px;
-        background-color: $fourth-color;   
+        margin: 10px;
+        box-sizing: 15px;
+        border-radius: 5%;
+        padding: 5px;
+        background-color: #caf0f8 ;
     }
 
     .text-other-page {
