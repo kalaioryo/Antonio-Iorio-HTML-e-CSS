@@ -121,6 +121,11 @@ body {
     padding: 90px 0;
     display: flex;
     justify-content: center;
+
+    h3 {
+        color: #101d37;
+        margin: 40px 2%;
+    }
 }
 
 p {
@@ -266,6 +271,15 @@ footer {
     }
 }
 
+.new-link{
+    text-decoration: none;
+    color: $first-color;
+    background-color: $fourth-color;
+    padding: 5px;
+    box-shadow: 0px 0px 20px $text-color;
+    border-radius: 5px;
+}
+
 
 //scroollbar
 
@@ -306,11 +320,11 @@ footer {
         min-width: 100%
     }
 
-    .card-container {
-        width: 50%;
-        max-width: 300px;
+    /*.card-container {
+        //width: 300px;
+        //max-width: 300px;
         
-    }
+    }*/
 
     .cards {
         flex-direction: row;

@@ -281,6 +281,10 @@ body {
   display: flex;
   justify-content: center;
 }
+.text h3 {
+  color: #101d37;
+  margin: 40px 2%;
+}
 
 p {
   margin: 10px 2%;
@@ -389,6 +393,15 @@ footer ul li img {
   color: #101d37;
 }
 
+.new-link {
+  text-decoration: none;
+  color: #76b1f8;
+  background-color: #101d37;
+  padding: 5px;
+  box-shadow: 0px 0px 20px #76b1f8;
+  border-radius: 5px;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
@@ -426,11 +439,11 @@ footer ul li img {
     min-width: 100%;
   }
 
-  .card-container {
-    width: 50%;
-    max-width: 300px;
-  }
+  /*.card-container {
+      //width: 300px;
+      //max-width: 300px;
 
+  }*/
   .cards {
     flex-direction: row;
     justify-content: space-around;
