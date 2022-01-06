@@ -396,6 +396,10 @@ footer ul li img {
   color: #101d37;
 }
 
+.image-project {
+  max-width: 80%;
+}
+
 .new-link {
   text-decoration: none;
   color: #76b1f8;
