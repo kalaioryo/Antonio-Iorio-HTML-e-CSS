@@ -28,6 +28,7 @@ $effect-color:#2196f3;
     
     .card-image{
         width: 100%;
+        max-width: 320px;
     
     }
 
@@ -35,6 +36,7 @@ $effect-color:#2196f3;
         border: 5px $fourth-color solid;
         border-radius: 16px;
         width: 80%;
+        max-width: 320 px;
         margin: 0 1.5%;
     
     

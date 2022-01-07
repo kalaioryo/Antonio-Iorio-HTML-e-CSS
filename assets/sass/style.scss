@@ -180,6 +180,9 @@ p {
 .border-portfolio {
     @extend %margin-div;
     border: none;
+    display: flex;
+    justify-content: space-around
+
 }
 
 //card section _card.scss
